@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+    display: inline-block;
+}
+
+h1,
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.btn__all {
+    font-weight: 700;
+}
+
+.getstarted__btn {
+    text-decoration: none;
+    font-size: .75rem;
+    color: #ffffff;
+    background-color: hsl(322, 100%, 66%);
+    border-radius: 30px;
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.5);
+    padding: .5rem 2.5rem;
+}
+
+.logo {
+    width: 6rem;
+    height: 1rem;
+}
+/****************TOP Container Styles ********************/
+.first__container {
+    display: grid;
+    grid-template-columns: minmax(.5rem, 1rem) 1fr minmax(.5rem, 1rem);
+    background-image: url('images/bg-hero-mobile.svg');
+    background-color: hsl(193, 100%, 96%);
+    padding: 1.5rem 0;
+}
+
+.logo__box, 
+.first__content,
+.mockup__img {
+    grid-column: 2 / 3;
+}
+
+.first__content,
+.mockup__img {
+    justify-self: center;
+    align-self: center;
+}
+
+.try__btn {
+    text-decoration: none;
+    border-radius: 30px;
+    background-color: #ffffff;
+    color: hsl(192, 100%, 9%);
+    font-size: .7rem;
+    padding: .3rem 1.5rem;
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.logo__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.first__content {
+    text-align: center;
+    margin: 5rem 0 3rem; 
+}
+
+.huddle__desc {
+    margin: 1.5rem 0;
+    padding: 0 1.3rem;
+}
+
+.mockup__img {
+    padding: 0 1rem;
+}
+/******************************MAIN CONTENT/DESCRIPTION********************/
+.main__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem 1.5rem;
+}
+
+.grow__card,
+.flow__card,
+.users__card {
+    text-align: center;
+    padding: 2rem 1.9rem;
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.grow__block h2,
+.flow__block h2,
+.users__block h2 {
+    margin: 2rem 0 1rem;
+}
+
+.grow__desc,
+.flow__desc,
+.users__desc {
+    color: hsl(208, 11%, 55%);
+    padding: .4rem;
+}
+/******************************CALL TO ACTION CARD*****************************/
+.cta__card {
+    background-color: #ffffff;
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 2.5rem 1.5rem 3rem;
+    margin: 2rem 1rem;
+    text-align: center;
+    position: relative;
+    top: 5rem;
+}
+
+.last__logo {
+    filter: invert(100%) grayscale(100%) brightness(200%);
+    width: 10rem;
+    height: auto;
+    padding-left: .3rem;
+    margin-top: 5rem;
+}
+
+.cta__card h4 {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.cta__card a {
+    padding: .75rem 3rem;
+    font-size: .65rem;
+}
+
+.last__container {
+    background-color: hsl(192, 100%, 9%);
+    color: hsl(193, 100%, 96%);
+}
+
+.huddle__info li {
+    display: grid;
+    grid-template-columns: minmax(.3rem, 1rem) 1fr;
+    justify-content: center;
+    gap: .5rem;
+    margin: 1rem .3rem;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.huddle__info li img {
+    padding-top: .3rem;
+}
+
+.about {
+    line-height: 2;
+    padding-left: .3rem;
+    list-style-type: none;
+    font-size: 1.1rem;
+}
+
+.social__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .75rem;
+    margin: 1.5rem 0 0;
+    list-style-type: none;
+    padding-left: .3rem;
+}
+
+
+.social__links img {
+    filter: invert(100%) grayscale(100%) brightness(200%);
+    width: 1.5rem;
+}
+
+.copyright {
+    text-align: center;
+    font-size: .8rem;
+    padding-bottom: .5rem;
+}
+
+
+
+
+
