@@ -200,6 +200,7 @@ h2 {
     padding-bottom: .5rem;
 }
 /*************************MEDIA QUERIES*************************/
+
 @media (min-width: 1298px) {
     .first__container {
         grid-template-columns: 5% 1fr 1fr 3%;
@@ -306,7 +307,7 @@ h2 {
     }
 
     .cta__card {
-        margin: 1rem 35rem;
+        margin: 1rem 395px;
         padding: 4rem 1.5rem ;
         top: 7rem;
     }
