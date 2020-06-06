@@ -84,6 +84,7 @@ h2 {
 .huddle__desc {
     margin: 1.5rem 0;
     padding: 0 1.3rem;
+    line-height: 1.5;
 }
 
 .mockup__img {
@@ -126,7 +127,7 @@ h2 {
     box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     padding: 2.5rem 1.5rem 3rem;
-    margin: 2rem 1rem;
+    margin: 0rem 1rem 2rem;
     text-align: center;
     position: relative;
     top: 5rem;
@@ -136,7 +137,7 @@ h2 {
     filter: invert(100%) grayscale(100%) brightness(200%);
     width: 10rem;
     height: auto;
-    padding-left: .3rem;
+    padding-left: .9rem;
     margin-top: 5rem;
 }
 
@@ -160,8 +161,9 @@ h2 {
     grid-template-columns: minmax(.3rem, 1rem) 1fr;
     justify-content: center;
     gap: .5rem;
-    margin: 1rem .3rem;
+    margin: 1rem 0;
     text-align: left;
+    padding: 0 .9rem;
     line-height: 1.5;
 }
 
@@ -171,7 +173,7 @@ h2 {
 
 .about {
     line-height: 2;
-    padding-left: .3rem;
+    padding-left: .9rem;
     list-style-type: none;
     font-size: 1.1rem;
 }
@@ -181,7 +183,7 @@ h2 {
     justify-content: center;
     align-items: center;
     gap: .75rem;
-    margin: 1.5rem 0 0;
+    margin: 1.5rem 0 .5rem;
     list-style-type: none;
     padding-left: .3rem;
 }
@@ -197,8 +199,177 @@ h2 {
     font-size: .8rem;
     padding-bottom: .5rem;
 }
+/*************************MEDIA QUERIES*************************/
+@media (min-width: 1298px) {
+    .first__container {
+        grid-template-columns: 5% 1fr 1fr 3%;
+        background-image: url('images/bg-hero-desktop.svg');
+    }
 
+    .logo__box {
+        grid-column: 2 / 4;
+    }
 
+    .first__content {
+        grid-column: 2 / 3;
+        grid-row: span 2;
+        text-align: left;
+        margin-top: 3rem;
+    }
 
+    .mockup__img {
+        grid-column: 3 / 4;
+        grid-row: span 2;
+    }
+
+    .first__content h1 {
+        font-size: 2.5rem;
+    }
+
+    .huddle__desc {
+        padding-left: 0;
+        padding-right: 15.5rem;
+        font-size: 1.3rem;
+        margin-bottom: 3rem;
+    }
+
+    .btn__big {
+        padding: 1rem 3.5rem;
+    }
+    
+    .logo__box {
+        margin-bottom: 5rem;
+    }
+
+    .logo {
+        width: 10rem;
+        height: auto;
+    }
+
+    .try__btn {
+        padding: .75rem 3rem;
+    }
+
+    .main__content {
+        margin: 5rem 3rem;
+        row-gap: 2rem;
+    }
+
+    .main__content article {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .grow__img,
+    .users__img {
+        grid-column: 2 / 3;
+        width: 29rem;
+        height: auto;
+        justify-self: end;
+        margin: 3rem;
+    }
+
+    .flow__img {
+        width: 29rem;
+        height: auto;
+        justify-self: start;
+        margin: 3rem;
+    }
+
+    .flow__block {
+        text-align: left;
+        justify-self: center;
+        align-self: center;
+        margin: 3rem;
+        font-size: 1.3rem;
+        padding: 0 5rem;
+    }
+
+    .grow__block,
+    .users__block {
+        grid-column: 1 / 2;
+        grid-row: 1;
+        text-align: left;
+        justify-self: center;
+        align-self: center;
+        margin: 3rem;
+        font-size: 1.3rem;
+        padding: 0 5rem;
+    }
+
+    .grow__desc,
+    .users__desc,
+    .flow__desc {
+        padding: 0;
+    }
+
+    .cta__card {
+        margin: 1rem 35rem;
+        padding: 4rem 1.5rem ;
+        top: 7rem;
+    }
+
+    .cta__card h4 {
+        font-size: 1.85rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .cta__card a {
+        font-size: .8rem;
+        padding: 1.1rem 5.3rem;
+    }
+
+    .last__container {
+        display: grid;
+        grid-template-columns: .75fr .5fr .5fr .5fr;
+        gap: 1.5rem;
+        padding: 5rem 10rem;
+    }
+
+    .huddle__info {
+        grid-column: 1 / 2;
+        justify-self: end;
+        line-height: 2.5;
+    }
+
+    .huddle__info li {
+        gap: 1rem;
+    }
+
+    .last__logo {
+        width: 17rem;
+    }
+
+    .about {
+        justify-self: center;
+        line-height: 2.5;
+    }
+
+    .first__block {
+        grid-column: 2 / 3;
+    }
+
+    .second__block {
+        grid-column: 3 / 4;
+    }
+
+    .social__links {
+        grid-column: 4 / 5;
+        grid-row: 2;
+        align-self: start;
+        justify-self: start;
+        margin: 0;
+        padding-top: .7rem;
+    }
+
+    .copyright {
+        grid-column: 4 / 5;
+        grid-row: 4;
+        justify-self: start;
+        align-self: start;
+    }
+}
 
 
